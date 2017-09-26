@@ -1,9 +1,12 @@
 {
-  "name": "imagemin-jpegtran",
+  "name": "china-imagemin-jpegtran",
   "version": "5.0.2",
-  "description": "jpegtran imagemin plugin",
+  "description": "jpegtran imagemin plugin, 同步官方代码，解决国内下载jpegtran-bin,optipng-bin依赖的源码慢的问题",
   "license": "MIT",
-  "repository": "imagemin/imagemin-jpegtran",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lscgzwd/imagemin-jpegtran.git"
+  },
   "author": {
     "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
@@ -43,7 +46,7 @@
   "dependencies": {
     "exec-buffer": "^3.0.0",
     "is-jpg": "^1.0.0",
-    "jpegtran-bin": "^3.0.0"
+    "china-jpegtran-bin": "=3.2.0"
   },
   "devDependencies": {
     "ava": "*",
